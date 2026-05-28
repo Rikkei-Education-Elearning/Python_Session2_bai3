@@ -65,28 +65,28 @@
 
 print("--- PATIENT TRIAGE SYSTEM ---")
 
-patient_name = input("Enter patient's full name: ")
-patient_age = int(input("Enter patient's age: "))
+patient_name = input("Nhập tên bệnh nhân: ")
+patient_age = int(input("Nhập tuổi bệnh nhân: "))
 
 
 if patient_name.strip() == "" or patient_age < 0 or patient_age > 150:
-    print("ERROR: Invalid patient name or age is out of human range (0-150)!")
+    print("Tuổi bệnh nhân nhập sai hoặc chưa nhập! (0-150)!")
 
 else:
     if patient_age < 6:
-        result = "PRIORITY: Pediatric patient - Direct to Pediatrics Department."
+        result = "ƯU TIÊN: Bệnh nhi - Chuyển thẳng phòng khám Nhi."
         
     elif patient_age >= 80:
-        result = "PRIORITY: Senior patient - Wheelchair support and transfer to Geriatrics Department."
+        result = "ƯU TIÊN: Người cao tuổi - Hỗ trợ xe lăn, chuyển phòng khám Lão khoa."
         
     else:
-        result = "GENERAL CHECKUP: Please take a queue number and wait in the lobby."
+        result = "KHÁM THƯỜNG: Vui lòng lấy số thứ tự và chờ tới lượt tại sảnh."
 
     print()
-    print("--- ELECTRONIC MEDICAL TICKET ---")
-    print("Patient Name:", patient_name)
-    print("Patient Age:", patient_age)
-    print("Result:", result)
+    print("--- PHIẾU KHÁM ĐIỆN TỬ ---")
+    print("Tên bệnh nhân:", patient_name)
+    print("Tuổi bệnh nhân:", patient_age)
+    print("Kết quả:", result)
 
 print("System process completed.")
 
