@@ -70,7 +70,7 @@ patient_age = int(input("Nhập tuổi bệnh nhân: "))
 
 
 if patient_name.strip() == "" or patient_age < 0 or patient_age > 150:
-    print("Tuổi bệnh nhân nhập sai hoặc chưa nhập! (0-150)!")
+    print("Tuổi bệnh nhân nhập sai hoặc chưa nhập tên bệnh nhân! (0-150)!")
 
 else:
     if patient_age < 6:
